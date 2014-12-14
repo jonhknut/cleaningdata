@@ -71,7 +71,7 @@ data_tidy <- arrange(data_tidy, subject_id, activity_name)
         
 ## Step 4
 ## Write tidy table
-write.csv(data_tidy, "tidydata.txt", row.names = FALSE)
+write.table(data_tidy, "tidydata.txt", row.names = FALSE)
 
 ## Step 5
 ## Creates a second, independent tidy data set with the average of each variable 
@@ -79,7 +79,7 @@ write.csv(data_tidy, "tidydata.txt", row.names = FALSE)
 
 grouped_tidy <- group_by(data_tidy, subject_id, activity_name)
 tidy_summary <- summarise_each(grouped_tidy, funs(mean))
-write.csv(tidy_summary, "tidysummary.txt", row.names = FALSE)
+write.table(tidy_summary, "tidysummary.txt", row.names = FALSE)
 
 ## Step 6
 ## Clean up environment and remove unwanted files
