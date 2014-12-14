@@ -3,3 +3,7 @@
 .RData
 
 cleaningdata.Rproj
+
+UCI HAR Dataset/activity_labels.txt
+
+*.txt
