@@ -32,13 +32,22 @@ The run_analysis.R script merges data and produces in the end a summary of the m
 
 Step-wise description: 
 1) It checks whether "dplyr" package has been installed and loads the "dplyr" package. 
-2) It then reads all required .txt files and adds column names at the same time.
+
+2) It then reads all required .txt files and adds column names at the same time
+.
+
 3) Furthermore, it combines all the training data and the test data into one file and makes the file readable by the "dplyr" package. 
+
 4) Next, it extracts the mean and standard deviation results from the data using select()
+
 5) Then it adds descriptive activity names, removes activity id column, rearrange the columns and sort the rows based on subject id. 
+
 6) It then writes the full data table to a file called tidydata.text (not included in the project description, but added since it's a nice way to show that the script did work as expected).
+
 7) Grouping and summarizing
+
 8) Writing a table for the summary data called "tidysummary.txt" (see CodeBook for description)
+
 9) Cleaning the enviornment and removes the .zip file and the raw data folder from the computer
 
 ## Raw vs. manipulated data
