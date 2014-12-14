@@ -31,6 +31,7 @@ The tidy data set created in step 4 of the course instruction. This file was not
 The run_analysis.R script merges data and produces in the end a summary of the mean  value for each variable of each subject and activity. This result is reported in tidysummary.txt. 
 
 Step-wise description: 
+
 1) It checks whether "dplyr" package has been installed and loads the "dplyr" package. 
 
 2) It then reads all required .txt files and adds column names at the same time
